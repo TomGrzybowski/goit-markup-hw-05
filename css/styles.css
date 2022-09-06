@@ -12,6 +12,7 @@
   --icon-color: #afb1b8;
   --icon-border: #afb1b8;
   --black-opaque: rgba(255, 255, 255, 0.1);
+  --grey-opaque: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -273,19 +274,34 @@ ul {
 .agencja-scope-list {
   list-style-type: none;
   margin-top: 50px;
+  display: flex;
+  gap: 30px;
 }
 
-.agencja-scope-list > li {
-  display: inline;
-  margin-left: 30px;
-}
-.agencja-scope-list > li:first-child {
+.agencja-scope-list > .scope-box > li:first-child {
   margin-left: 0;
 }
 
-.agencja-scope-img {
+.scope-box {
   width: 370px;
   height: 294px;
+  position: relative;
+}
+
+.scope-box > p {
+  background: var(--grey-opaque);
+  color: var(--white-color);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .agencja-team {
@@ -403,6 +419,7 @@ ul {
   width: 1170px;
   display: flex;
   justify-content: flex-start;
+  padding: 60px 0;
 }
 
 .webstudio-footer {
