@@ -224,7 +224,7 @@ ul {
   background-color: var(--company-blue);
   display: inline-block;
   position: absolute;
-  top: 120%;
+  top: 45px;
   left: 0;
 }
 
